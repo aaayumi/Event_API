@@ -43,9 +43,9 @@ export default class Search extends Component {
     	if(data) {
     	 events = data.map(
     		(obj) =>(
-    			<div>
+    			<div className="result">
     			<a href={obj.url}>
-    			<img src={obj.images[0].url} alt="img" height="100" width="100"/>
+    			<img src={obj.images[0].url} alt="img" height="300" width="300"/>
     			<div key={obj.id}>{obj.name}</div></a>
     			</div>
     			)
@@ -58,7 +58,9 @@ export default class Search extends Component {
     		To<input type="date" id="endDate"/>
     		City<input type="text" id="cityName" />
     		<button onClick={this.handleEvent}>Search</button>
+    		<div className="wrapper">
             {events}
+            </div>
             </div>
     		)
     }

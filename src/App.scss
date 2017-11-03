@@ -1,0 +1,60 @@
+
+
+/*=========
+  Variable 
+============*/
+
+/** colors **/
+
+$lightBlue : #C3FFFB;
+
+$pink : #FF6494;
+
+$darkPink : #FE2D6D;
+
+/*=========
+  Style
+============*/
+
+/** General **/
+html {
+  background: $lightBlue;
+}
+
+a {
+ text-decoration: none;
+ color: $pink;
+}
+
+a:hover {
+  color: $darkPink;
+}
+
+
+/** result **/
+
+.wrapper {
+  margin-top: 20px;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+
+.result {
+  display: flex;
+  flex-basis: calc(33.3% - 14px);
+  justify-content: center;
+  flex-direction: column;
+}
+
+/* css grid
+.wrapper {
+  display: grid;
+  grid-template-columns: 100px 100px 100px 100px;
+  grid-gap: 250px;
+}
+
+.result {
+  padding: 20px;
+}
+*/

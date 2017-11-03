@@ -3,14 +3,19 @@
   "version": "0.1.0",
   "private": true,
   "dependencies": {
+    "axios": "^0.17.0",
+    "node-sass": "^4.5.3",
+    "proxyquire": "^1.8.0",
     "react": "^16.0.0",
     "react-dom": "^16.0.0",
-    "react-scripts": "1.0.16"
+    "react-scripts": "1.0.16",
+    "rewire": "^2.5.2",
+    "sass-loader": "^6.0.6"
   },
   "scripts": {
-    "start": "react-scripts start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "start": "node scripts/customized-config start",
+    "build": "node scripts/customized-config build",
+    "test": "node scripts/customized-config test --env=jsdom",
     "eject": "react-scripts eject"
   }
 }
