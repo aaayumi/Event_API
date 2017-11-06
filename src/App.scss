@@ -1,4 +1,4 @@
-
+@import url('https://fonts.googleapis.com/css?family=Raleway');
 
 /*=========
   Variable 
@@ -6,11 +6,15 @@
 
 /** colors **/
 
+$font: "Raleway", sans-serif;
+
 $lightBlue : #C3FFFB;
 
 $pink : #FF6494;
 
 $darkPink : #FE2D6D;
+
+$fontSize: 17px;
 
 /*=========
   Style
@@ -30,10 +34,50 @@ a:hover {
   color: $darkPink;
 }
 
+/** Title **/
+
+h1 {
+  font-family: $font;
+  text-align:center;
+}
+
+/** Input field **/
+
+.form {
+  margin-top: 30px;
+  text-align:center;
+  font-size: $fontSize;
+}
+
+label {
+  margin-right: 10px;
+  border: none;
+}
+
+input {
+  padding: 5px 10px;
+}
+
+button {
+  border:none;
+  margin-left: 10px;
+  padding: 5px 10px;
+  background: $pink;
+  text-decoration: none;
+}
+
+button:hover {
+  border:none;
+  margin-left: 10px;
+  padding: 5px 10px;
+  background: $darkPink;
+  text-decoration: none;
+}
 
 /** result **/
 
 .wrapper {
+  margin: 0 auto;
   margin-top: 20px;
   display: flex;
   flex-wrap: wrap;
@@ -43,18 +87,13 @@ a:hover {
 .result {
   display: flex;
   flex-basis: calc(33.3% - 14px);
-  justify-content: center;
+  justify-content: top;
   flex-direction: column;
+  margin-top: 20px;
+  font-family: $font;
+  font-size: $fontSize;
 }
 
-/* css grid
-.wrapper {
-  display: grid;
-  grid-template-columns: 100px 100px 100px 100px;
-  grid-gap: 250px;
+.result:hover {
+  opacity: 0.6;
 }
-
-.result {
-  padding: 20px;
-}
-*/

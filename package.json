@@ -17,5 +17,10 @@
     "build": "node scripts/customized-config build",
     "test": "node scripts/customized-config test --env=jsdom",
     "eject": "react-scripts eject"
+  },
+  "devDependencies": {
+    "chai-enzyme": "^0.8.0",
+    "enzyme": "^3.1.1",
+    "enzyme-adapter-react-16": "^1.0.4"
   }
 }

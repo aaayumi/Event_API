@@ -53,11 +53,18 @@ export default class Search extends Component {
     		}
         console.log(events)
     	return(
-    		<div>
-    		From<input type="date" id="startDate"/>
-    		To<input type="date" id="endDate"/>
-    		City<input type="text" id="cityName" />
-    		<button onClick={this.handleEvent}>Search</button>
+    	    <div>
+    	    <h1>Search Event</h1>
+    		<div className="form">
+    		<label for="startDate">From</label>
+    		<input type="date" id="startDate"/>
+    		<label for="endDate">To</label>
+    		<input type="date" id="endDate"/>
+    		<label for="cityName">City</label>
+    		<input type="text" id="cityName" />
+    		<button type="submit" onClick={this.handleEvent}>Search</button>
+    		</div>
+    		
     		<div className="wrapper">
             {events}
             </div>
