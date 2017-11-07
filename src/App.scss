@@ -23,20 +23,19 @@ $fontSize: 17px;
 ============*/
 
 /** General **/
-html {
-  
-  height: 100%;
-  display: block;
-  background: $lightBlue;
-  background: -webkit-linear-gradient($lightBlue, $blue); /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient($lightBlue, $blue); /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient($lightBlue, $blue); /* For Firefox 3.6 to 15 */
-    background: linear-gradient($lightBlue, $blue); /* Standard syntax */
+html,body {
+  height: 100vw;
+  margin: 0;
 }
 
 body {
-  position: relative;
-  margin: 0 auto;
+  background: $lightBlue;
+  background: -webkit-linear-gradient($lightBlue, $blue); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient($lightBlue, $blue); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient($lightBlue, $blue); /* For Firefox 3.6 to 15 */
+  background: linear-gradient($lightBlue, $blue); /* Standard syntax */
+  background-repeat: no-repeat;
+  background-attachment: fixed;
 }
 
 a {
